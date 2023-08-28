@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Guide App</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+
+    <!-- font awesome cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind and dasiUI -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style -->
+
+    <style>
+
+         body{
+
+            height: 900px;
+            background-color: #ae9cff;
+         }
+
+    </style>
+
+</head>
+
+<body >
+    <!-- header part -->
+
+    <header>
+
+        <h1 class="text-3xl md:text-5xl text-center font-bold text-white pt-10 md:pt-16">Country Guide App</h1>
+
+    </header>
+
+
+    <!-- main part -->
+
+ <main  class="grid justify-center mt-16 pb-16">
+
+
+    
+
+
+    <div  class="card pb-4 w-[300px] md:w-[500px] mx-2    bg-white shadow-xl ">
+
+
+            
+
+
+         <div class="flex justify-center items-center gap-4 p-2">
+
+
+             <!-- input field -->
+
+             <input id="input_field" style="border:none; outline: none; border-bottom: 2px solid #ae9cff;" type="text" placeholder="country name ....." class="text-center text-black font-bold p-3  rounded-sm w-3/4 md:w-full" >
+
+             <!-- search button -->
+ 
+             <button id="search_btn" class="btn btn-info bg-[#ae9cff;] text-white font-bold">Search</button>
+
+         </div>
+
+
+         <!-- card -->
+
+        <div id="result" class=" pt-4  px-3">
+
+
+            <!-- country flag and logo -->
+
+            <div class="text-center">
+
+                <figure class="bg-[#2e0927] p-2 rounded-xl"><img class="rounded-xl" src="./flag.png" alt="Shoes" /></figure>
+                
+                 <h1 class="text-2xl text-black font-extrabold">Bangladesh</h1>
+            </div>
+
+
+            <!-- country information -->
+
+            <div class="pt-5">
+
+                <p class="text-base text-black font-extrabold">Capital : <span class="text-[#31ae71]">Dhaka</span> </p>
+
+                <p class="text-base text-black font-extrabold">Continent : <span class="text-[#31ae71]">Asia</span> </p>
+
+                <p class="text-base text-black font-extrabold">Population : <span class="text-[#31ae71]">20,000,000</span> </p>
+
+                <p class="text-base text-black font-extrabold">Currency : <span class="text-[#31ae71]">BDT</span> </p>
+
+                <p class="text-base text-black font-extrabold">Common Languages : <span class="text-[#31ae71]">Bangla</span> </p>
+
+
+
+            </div>
+
+
+        </div> 
+
+
+           
+           
+
+         
+     </div>
+
+ </main>
+
+
+    <!-- script added -->
+    <script src="api.js"></script>
+
+</body>
+
+</html>
